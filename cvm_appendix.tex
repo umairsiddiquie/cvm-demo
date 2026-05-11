@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{quantum} % Custom macros for phase, entanglement, etc.
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing, arrows.meta}
+\usepackage{cleveref}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=1in}
+
+\title{Appendix A: Chronometric Valuation Model (CVM)}
+\author{Umair Abbas \\ \href{https://orcid.org/0009-0008-3968-2252}{ORCID: 0009-0008-3968-2252}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Foundations: Temporal Phase-Space}
+Let $\mathcal{T}$ denote the physical time manifold, and let $\mathcal{A} = \{a_0, a_1, \dots\}$
+be a set of \textbf{chronal anchors}—events with invariant temporal significance (e.g.,
+cosmological singularities, systemic financial inflection points). For any anchor $a_k$, define its
+proper chronal coordinate:
+\[
+\tau_k := \int_{t_{\text{ref}}}^{t_k} \frac{dt}{\sqrt{1 - \beta(t)^2}} \quad \text{(relativistic proper time
+analog)}
+\]
+where $\beta(t)$ encodes economic inertia (e.g., policy response lag, market memory decay).
+The \textbf{phase mapping} for harmonic period $P_k$ is:
+\begin{equation}
+\theta_k(t) = 2\pi \cdot \left\{ \frac{t - \tau_k}{P_k} \right\} \in [0, 2\pi)
+\end{equation}
+where $\{\cdot\}$ denotes fractional part (mod 1), ensuring periodicity.
+
+\section{Multi-Harmonic Temporal Lattice}
+Define a \textit{temporal lattice} $\Lambda \subset \mathbb{R}^n$ as:
+\[
+\Lambda = \bigoplus_{k=1}^{N} \mathbb{Z} \cdot \mathbf{e}_k, \quad \mathbf{e}_k = \left(
+\cos\theta_k(t), \sin\theta_k(t) \right)
+\]
+Each event $E_i$ at time $t_i$ maps to a point:
+\[
+\vec{\Theta}(t_i) = \left( \theta_1(t_i), \theta_2(t_i), \dots, \theta_N(t_i) \right) \in \mathbb{T}^N
+\]
+the $N$-torus of harmonic phases.
+Let $\mathcal{H} = \{P_3, P_6, P_9, P_{12}\}$ be the canonical harmonic set (motivated by
+empirical cycle clustering in macroeconomics and solar-terrestrial systems).
+
+\section{Chronometric Valuation Operator}
+Let $CF_i$ be the cash flow at $t_i$. Define the \textbf{valuation kernel}:
+\begin{equation}
+\mathcal{K}_k(t_i) = \exp\left( i \, \omega_k \theta_k(t_i) \right) \cdot \rho_k(t_i)
+\end{equation}
+where:
+\begin{itemize}
+\item $\omega_k = 2\pi / P_k$ is the angular frequency,
+\item $\rho_k(t_i) = \exp\left(-\gamma_k \cdot d_{\text{geo}}(t_i, a_k)\right)$ is a geodesic
+damping factor ($d_{\text{geo}}$ = temporal distance along causal path),
+\item $\gamma_k > 0$ controls harmonic relevance (learned via citation-network attention
+over SideChannel/HardwareCrypto clusters).
+\end{itemize}
+Then the \textbf{Chronogeometric Value} of a stream $\{CF_i\}_{i=1}^M$ is:
+\begin{equation}
+\boxed{
+V_{\text{CVM}} = \Re\left[ \sum_{i=1}^M CF_i \cdot \sum_{k=1}^{N} w_k \, \mathcal{K}_k(t_i)
+\right]
+}
+\end{equation}
+with weights $w_k$ normalized: $\sum_k w_k = 1$, derived from entropy minimization over
+historical resonance events.
+
+\section{Temporal Resonance Metric}
+Two events $E_i, E_j$ exhibit \textbf{temporal resonance} iff:
+\begin{equation}
+\Delta\theta_{ij}^{(k)} = \left| \theta_k(t_i) - \theta_k(t_j) \right| < \epsilon_k \quad \forall k \in
+\mathcal{S}
+\end{equation}
+for a subset $\mathcal{S} \subseteq \{1,\dots,N\}$ and tolerance $\epsilon_k \ll 2\pi$. Define the
+resonance strength:
+\begin{equation}
+\mathcal{R}(E_i, E_j) = \prod_{k \in \mathcal{S}} \cos^2\left( \frac{\Delta\theta_{ij}^{(k)}}{2} \right)
+\end{equation}
+This is structurally analogous to quantum fidelity between coherent states.
+
+\section{Connection to Quantum Block Torch (QBT)}
+Under QBT, the valuation $V_{\text{CVM}}$ can be certified via a zero-knowledge proof:
+\[
+\pi = \text{ZKProof}\big( \{CF_i\}, \{\theta_k(t_i)\}, \mathcal{R} \big)
+\]
+using lattice-based commitments (e.g., Dilithium-style) and FHE-evaluated phase
+sums—ensuring privacy-preserving auditability.
+
+\end{document}
