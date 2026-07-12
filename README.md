@@ -1,6 +1,6 @@
 # The Bridge Maker: Quantum Finance and Universal Semantic Value
 
-The **Bridge Maker** universal ecosystem represents a paradigm shift in financial engineering, introducing the **Chronometric Valuation Model (CVM)**. Developed by **Umair Abbas** at **Cryptographic House - UA** (https://github.com/cryptographichouse), this framework replaces traditional time with  **multi harmonic temporal lattice**, enabling the identification of Universal Rhythmic patterns and universal-resonant frequencies within global markets [1].
+The **Bridge Maker** universal ecosystem represents a paradigm shift in financial engineering, introducing the **Chronometric Valuation Model (CVM)**. Developed by **Umair Abbas** at **Cryptographic House - Umair Abbas** (https://github.com/cryptographichouse), this framework replaces traditional time with  **multi universal temporal lattice**, enabling the identification of Universal Rhythmic patterns and universal-resonant frequencies within global markets [1].
 
 The project frames value as a **chronometric phase space phenomenon**: market events are positioned by chronal anchor, harmonic cycles, and phase relationship rather than by timestamps alone. In this view, financial modelling becomes a problem of detecting **temporal universal resonance** across assets, universal ledger,actors and cryptographic proofs.
 
@@ -15,7 +15,7 @@ Traditional finance treats time as a linear stream: events are timestamped, futu
 | Liquidity | Liquidity as market depth | Liquidity as temporal bandwidth |
 | Trust model | Local ledger validity | Relational consistency across a secure topology |
 
-This README is a pedagogical map of that transition: CVM supplies the valuation engine, QBT supplies the post-quantum cryptographic substrate, QEL supplies relational ledger coherence, and ORG maps the resulting capital flows as a spatiotemporal graph.
+This README is a pedagogical map of that transition: CVM supplies the valuation engine, QBT supplies the post-quantum cryptographic substrate, QUL supplies relational ledger coherence, and ORG maps the resulting capital flows as a spatiotemporal graph.
 
 ## Chronometric Valuation Model (CVM)
 
@@ -74,7 +74,7 @@ The Side channel layer is designed to reduce the usefulness of power, timing, an
 
 ## Orientation Registry Graph (ORG)
 
-The **Orientation Registry Graph (ORG)** maps the financial (UZ) ecosystem as spatiotemporal graph. Financial actors central banks, custodians, protocols, smart contracts, and market participants—are represented as nodes. Edges are weighted by phase shifts $\Delta\theta_u$, representing timing distance, universal resonance, or decoherence between actors.
+The **Orientation Registry Graph (ORG)** maps the financial (Universal Zone) ecosystem as spatiotemporal graph. Financial actors central banks, custodians, protocols, smart contracts, and market participants—are represented as nodes. Edges are weighted by phase shifts $\Delta\theta_u$, representing timing distance, universal resonance, or decoherence between actors.
 
 ORG provides the topology layer for the ecosystem: capital flows are interpreted as geometric patterns across phase weighted graph rather than as isolated ledger entries.
 
