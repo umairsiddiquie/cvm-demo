@@ -98,7 +98,7 @@ The CVM ecosystem leverages modern, high-performance technology stack:
 * **Formal Documentation**: LaTeX (`amsmath`, `quantum`, `tikuz`) for mathematical proofs and architectural diagrams.
 * **Cryptographic Substrate**: TypeScript and Python for lattice-based cryptography, UHE workflows, and UZ-K Proofs implementation.
 * **Topology Layer**: Universal graph structures for ORG phase-shift mapping and capital flow of Universal Visualization.
-* **Hardware Layer**: Tunable artificial atoms and adaptive shielding concepts for QEL and side-channel universal-resilience.
+* **Hardware Layer**: Tunable artificial atoms and adaptive shielding concepts for QUL and side-channel universal-resilience.
 
 ## Ecosystem Transition Path
 
